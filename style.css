@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #07252d;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.o{
+    font-size: 8em;
+    font-weight: 600;
+    color: #0e3742;
+    
+}
+.a2{
+    animation: a2 5s infinite alternate;   
+}
+.a1{
+    animation: a1 5s infinite alternate ;
+}
+.a3{
+    animation: a3 5s infinite alternate ;
+}
+@keyframes a1 {
+    0%{
+        color: #0e3742;
+        box-shadow: none;
+    }
+    100%{
+        transform: translate(-150px,90px) rotate(90deg);
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+@keyframes a2 {
+    0%{
+        color: #0e3742;
+        box-shadow: none;
+    }
+    50%{
+        transform: rotate(90deg) ;
+    }
+    100%{
+        transform: rotate(90deg) translateY(115px);
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+@keyframes a3 {
+    0%{
+        color: #0e3742;
+        box-shadow: none;
+    }
+    100%{
+        transform: translate(-150px,-90px) rotate(-90deg) ;
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
